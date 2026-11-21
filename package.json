@@ -1,0 +1,25 @@
+{
+  "name": "luxury-motion-studio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:supercar": "node scripts/render-remotion.mjs SupercarTest output/supercar-test.mp4",
+    "audio:supercar": "python3 scripts/engine_audio.py src/projects/supercar-test/motion.json public/audio/supercar-test.wav"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.3.0",
+    "@remotion/cli": "4.0.545",
+    "@remotion/three": "4.0.545",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.545",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "@types/three": "0.180.0",
+    "typescript": "5.9.3"
+  }
+}
